@@ -1,22 +1,81 @@
 # mmo — game-art image prompts
 
-Image-generation prompts for game / MMO marketplace thumbnails.
-Each prompt targets an image model (e.g. `fal-ai/gpt-image-2`), 16:9, no baked price/currency.
+Image-generation prompts for game / MMO marketplace thumbnails. Each prompt targets an image
+model (`fal-ai/gpt-image-2`), 16:9, no baked price/currency.
 
-## Game audio — isometric pixel-game diorama
+---
 
-![Game audio diorama thumbnail](./game-audio-diorama.webp)
+# 🧱 NEW · Nanoblock micro-brick dioramas (20)
 
-A cohesive isometric hero scene fusing a game-audio studio with a retro pixel-art game world, on a
-console-style pedestal, bold left-side typography, red & charcoal palette.
+Game/MMO scenes built **entirely out of tiny NANOBLOCK-style micro building bricks** (assembled
+studded mini-bricks, visible stud bumps + brick seams), isometric tilt-shift miniature on a glossy
+pedestal, palette-varied. Prompts: [`prompts-nano.md`](./prompts-nano.md) · generator: [`gen-dioramas.py`](./gen-dioramas.py).
 
-→ Full prompt + seed template: [`game-audio-diorama.md`](./game-audio-diorama.md)
+### `img-nano/alchemy-lab.webp`
+![alchemy-lab](./img-nano/alchemy-lab.webp)
 
-## 3D isometric diorama gallery (20 images)
+### `img-nano/arena-colosseum.webp`
+![arena-colosseum](./img-nano/arena-colosseum.webp)
 
-Game/MMO scenes in a shared **3D isometric diorama** style (low-poly + pixel-art hybrid, tilt-shift
-miniature on a glossy pedestal), palette-varied. Exact prompts: [`prompts.md`](./prompts.md). 
-Generator: [`gen-dioramas.py`](./gen-dioramas.py) (`fal-ai/gpt-image-2`).
+### `img-nano/blacksmith-forge.webp`
+![blacksmith-forge](./img-nano/blacksmith-forge.webp)
+
+### `img-nano/coral-ruins.webp`
+![coral-ruins](./img-nano/coral-ruins.webp)
+
+### `img-nano/cozy-tavern.webp`
+![cozy-tavern](./img-nano/cozy-tavern.webp)
+
+### `img-nano/cyber-market.webp`
+![cyber-market](./img-nano/cyber-market.webp)
+
+### `img-nano/desert-oasis.webp`
+![desert-oasis](./img-nano/desert-oasis.webp)
+
+### `img-nano/dragon-lair.webp`
+![dragon-lair](./img-nano/dragon-lair.webp)
+
+### `img-nano/dungeon-boss.webp`
+![dungeon-boss](./img-nano/dungeon-boss.webp)
+
+### `img-nano/guild-hall.webp`
+![guild-hall](./img-nano/guild-hall.webp)
+
+### `img-nano/harvest-farm.webp`
+![harvest-farm](./img-nano/harvest-farm.webp)
+
+### `img-nano/haunted-crypt.webp`
+![haunted-crypt](./img-nano/haunted-crypt.webp)
+
+### `img-nano/magic-academy.webp`
+![magic-academy](./img-nano/magic-academy.webp)
+
+### `img-nano/overworld-map.webp`
+![overworld-map](./img-nano/overworld-map.webp)
+
+### `img-nano/pirate-cove.webp`
+![pirate-cove](./img-nano/pirate-cove.webp)
+
+### `img-nano/pixel-forest.webp`
+![pixel-forest](./img-nano/pixel-forest.webp)
+
+### `img-nano/sky-island.webp`
+![sky-island](./img-nano/sky-island.webp)
+
+### `img-nano/snowy-fortress.webp`
+![snowy-fortress](./img-nano/snowy-fortress.webp)
+
+### `img-nano/spaceport-hangar.webp`
+![spaceport-hangar](./img-nano/spaceport-hangar.webp)
+
+### `img-nano/town-square.webp`
+![town-square](./img-nano/town-square.webp)
+
+---
+
+# 🟪 Pixel-art dioramas (20)
+
+Earlier set — isometric low-poly + retro **pixel-art** dioramas. Prompts: [`prompts.md`](./prompts.md).
 
 ### `img/alchemy-lab.webp`
 ![alchemy-lab](./img/alchemy-lab.webp)
@@ -77,4 +136,12 @@ Generator: [`gen-dioramas.py`](./gen-dioramas.py) (`fal-ai/gpt-image-2`).
 
 ### `img/town-square.webp`
 ![town-square](./img/town-square.webp)
+
+---
+
+# 🎮 Game audio — original diorama
+
+![game-audio-diorama](./game-audio-diorama.webp)
+
+Full prompt + seed template: [`game-audio-diorama.md`](./game-audio-diorama.md).
 
