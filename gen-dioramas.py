@@ -4,14 +4,16 @@ Run: python3 gen-dioramas.py  (outputs img/<slug>.webp + prompts.md)"""
 import json, os, subprocess, tempfile, urllib.request, shutil, concurrent.futures
 
 KEY = subprocess.run(["secret", "get", "fal.api_key"], capture_output=True, text=True).stdout.strip()
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "img-block")
+OUT = os.environ.get("MMO_OUT") or os.path.join(os.path.dirname(os.path.abspath(__file__)), "img-block")
 os.makedirs(OUT, exist_ok=True)
 
 TAIL = " 16:9 widescreen composition. Cohesive {pal} color grade, soft studio lighting, soft long shadows, dark premium background. No text, no price, no currency."
-SKEL = ("A polished 3D ISOMETRIC DIORAMA, a small game world built out of CHUNKY 3D BLOCKS — bold simple "
-        "cube blocks (clean voxel/box shapes, smooth blocks, NO studs, NO bumps, NO assembly grooves), like a "
-        "blocky toy model, on a glossy pedestal base: {subj}. Clean minimal blocky look, tilt-shift miniature, "
-        "crisp studio render.")
+SKEL = ("A richly-detailed 3D ISOMETRIC DIORAMA, a game world built out of smooth 3D BLOCKS of MIXED, "
+        "NON-UNIFORM sizes — big chunky blocks for the large masses (walls, terrain, roofs) combined with "
+        "many small blocks for fine detail (windows, props, characters, foliage, trim), all clean smooth "
+        "cube/box shapes with NO studs and NO bumps, sitting on a glossy pedestal base: {subj}. Dense, "
+        "intricate blocky build with lots of little blocks adding texture and depth, varied block scale, "
+        "tilt-shift miniature feel, premium crisp studio render, main-hero level of detail.")
 
 # (slug, subject, palette)
 SCENES = [
@@ -60,9 +62,10 @@ def gen(scene):
     except Exception as e:
         return slug, prompt, f"❌ {str(e)[:120]}"
 
+SUBSET = SCENES[:int(os.environ["MMO_N"])] if os.environ.get("MMO_N") else SCENES
 rows = []
 with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
-    for slug, prompt, status in ex.map(gen, SCENES):
+    for slug, prompt, status in ex.map(gen, SUBSET):
         print(f"{status:14} {slug}", flush=True)
         rows.append((slug, prompt, status))
 
