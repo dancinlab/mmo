@@ -5,77 +5,85 @@ model (`fal-ai/gpt-image-2`), 16:9, no baked price/currency.
 
 ---
 
-# 🧱 NEW · Nanoblock micro-brick dioramas (20)
+# 🎮 MAIN — game-audio hero diorama
 
-Game/MMO scenes built **entirely out of tiny NANOBLOCK-style micro building bricks** (assembled
-studded mini-bricks, visible stud bumps + brick seams), isometric tilt-shift miniature on a glossy
-pedestal, palette-varied. Prompts: [`prompts-nano.md`](./prompts-nano.md) · generator: [`gen-dioramas.py`](./gen-dioramas.py).
+![game-audio-diorama](./game-audio-diorama.webp)
 
-### `img-nano/alchemy-lab.webp`
-![alchemy-lab](./img-nano/alchemy-lab.webp)
+The original EdgeGigs game-audio thumbnail. Prompt + seed: [`game-audio-diorama.md`](./game-audio-diorama.md).
 
-### `img-nano/arena-colosseum.webp`
-![arena-colosseum](./img-nano/arena-colosseum.webp)
+---
 
-### `img-nano/blacksmith-forge.webp`
-![blacksmith-forge](./img-nano/blacksmith-forge.webp)
+# 🧊 Block (voxel) dioramas (20)
 
-### `img-nano/coral-ruins.webp`
-![coral-ruins](./img-nano/coral-ruins.webp)
+Game/MMO scenes built out of **chunky 3D blocks** (bold simple cube/voxel blocks, no studs, no grooves),
+isometric tilt-shift miniature on a glossy pedestal, palette-varied.
+Prompts: [`prompts-block.md`](./prompts-block.md) · generator: [`gen-dioramas.py`](./gen-dioramas.py).
 
-### `img-nano/cozy-tavern.webp`
-![cozy-tavern](./img-nano/cozy-tavern.webp)
+### `img-block/alchemy-lab.webp`
+![alchemy-lab](./img-block/alchemy-lab.webp)
 
-### `img-nano/cyber-market.webp`
-![cyber-market](./img-nano/cyber-market.webp)
+### `img-block/arena-colosseum.webp`
+![arena-colosseum](./img-block/arena-colosseum.webp)
 
-### `img-nano/desert-oasis.webp`
-![desert-oasis](./img-nano/desert-oasis.webp)
+### `img-block/blacksmith-forge.webp`
+![blacksmith-forge](./img-block/blacksmith-forge.webp)
 
-### `img-nano/dragon-lair.webp`
-![dragon-lair](./img-nano/dragon-lair.webp)
+### `img-block/coral-ruins.webp`
+![coral-ruins](./img-block/coral-ruins.webp)
 
-### `img-nano/dungeon-boss.webp`
-![dungeon-boss](./img-nano/dungeon-boss.webp)
+### `img-block/cozy-tavern.webp`
+![cozy-tavern](./img-block/cozy-tavern.webp)
 
-### `img-nano/guild-hall.webp`
-![guild-hall](./img-nano/guild-hall.webp)
+### `img-block/cyber-market.webp`
+![cyber-market](./img-block/cyber-market.webp)
 
-### `img-nano/harvest-farm.webp`
-![harvest-farm](./img-nano/harvest-farm.webp)
+### `img-block/desert-oasis.webp`
+![desert-oasis](./img-block/desert-oasis.webp)
 
-### `img-nano/haunted-crypt.webp`
-![haunted-crypt](./img-nano/haunted-crypt.webp)
+### `img-block/dragon-lair.webp`
+![dragon-lair](./img-block/dragon-lair.webp)
 
-### `img-nano/magic-academy.webp`
-![magic-academy](./img-nano/magic-academy.webp)
+### `img-block/dungeon-boss.webp`
+![dungeon-boss](./img-block/dungeon-boss.webp)
 
-### `img-nano/overworld-map.webp`
-![overworld-map](./img-nano/overworld-map.webp)
+### `img-block/guild-hall.webp`
+![guild-hall](./img-block/guild-hall.webp)
 
-### `img-nano/pirate-cove.webp`
-![pirate-cove](./img-nano/pirate-cove.webp)
+### `img-block/harvest-farm.webp`
+![harvest-farm](./img-block/harvest-farm.webp)
 
-### `img-nano/pixel-forest.webp`
-![pixel-forest](./img-nano/pixel-forest.webp)
+### `img-block/haunted-crypt.webp`
+![haunted-crypt](./img-block/haunted-crypt.webp)
 
-### `img-nano/sky-island.webp`
-![sky-island](./img-nano/sky-island.webp)
+### `img-block/magic-academy.webp`
+![magic-academy](./img-block/magic-academy.webp)
 
-### `img-nano/snowy-fortress.webp`
-![snowy-fortress](./img-nano/snowy-fortress.webp)
+### `img-block/overworld-map.webp`
+![overworld-map](./img-block/overworld-map.webp)
 
-### `img-nano/spaceport-hangar.webp`
-![spaceport-hangar](./img-nano/spaceport-hangar.webp)
+### `img-block/pirate-cove.webp`
+![pirate-cove](./img-block/pirate-cove.webp)
 
-### `img-nano/town-square.webp`
-![town-square](./img-nano/town-square.webp)
+### `img-block/pixel-forest.webp`
+![pixel-forest](./img-block/pixel-forest.webp)
+
+### `img-block/sky-island.webp`
+![sky-island](./img-block/sky-island.webp)
+
+### `img-block/snowy-fortress.webp`
+![snowy-fortress](./img-block/snowy-fortress.webp)
+
+### `img-block/spaceport-hangar.webp`
+![spaceport-hangar](./img-block/spaceport-hangar.webp)
+
+### `img-block/town-square.webp`
+![town-square](./img-block/town-square.webp)
 
 ---
 
 # 🟪 Pixel-art dioramas (20)
 
-Earlier set — isometric low-poly + retro **pixel-art** dioramas. Prompts: [`prompts.md`](./prompts.md).
+Isometric low-poly + retro **pixel-art** dioramas. Prompts: [`prompts.md`](./prompts.md).
 
 ### `img/alchemy-lab.webp`
 ![alchemy-lab](./img/alchemy-lab.webp)
@@ -139,9 +147,67 @@ Earlier set — isometric low-poly + retro **pixel-art** dioramas. Prompts: [`pr
 
 ---
 
-# 🎮 Game audio — original diorama
+# 🧱 Nanoblock micro-brick dioramas (20)
 
-![game-audio-diorama](./game-audio-diorama.webp)
+Micro-brick (Nanoblock-style) dioramas — tiny studded mini-bricks. Prompts: [`prompts-nano.md`](./prompts-nano.md).
 
-Full prompt + seed template: [`game-audio-diorama.md`](./game-audio-diorama.md).
+### `img-nano/alchemy-lab.webp`
+![alchemy-lab](./img-nano/alchemy-lab.webp)
+
+### `img-nano/arena-colosseum.webp`
+![arena-colosseum](./img-nano/arena-colosseum.webp)
+
+### `img-nano/blacksmith-forge.webp`
+![blacksmith-forge](./img-nano/blacksmith-forge.webp)
+
+### `img-nano/coral-ruins.webp`
+![coral-ruins](./img-nano/coral-ruins.webp)
+
+### `img-nano/cozy-tavern.webp`
+![cozy-tavern](./img-nano/cozy-tavern.webp)
+
+### `img-nano/cyber-market.webp`
+![cyber-market](./img-nano/cyber-market.webp)
+
+### `img-nano/desert-oasis.webp`
+![desert-oasis](./img-nano/desert-oasis.webp)
+
+### `img-nano/dragon-lair.webp`
+![dragon-lair](./img-nano/dragon-lair.webp)
+
+### `img-nano/dungeon-boss.webp`
+![dungeon-boss](./img-nano/dungeon-boss.webp)
+
+### `img-nano/guild-hall.webp`
+![guild-hall](./img-nano/guild-hall.webp)
+
+### `img-nano/harvest-farm.webp`
+![harvest-farm](./img-nano/harvest-farm.webp)
+
+### `img-nano/haunted-crypt.webp`
+![haunted-crypt](./img-nano/haunted-crypt.webp)
+
+### `img-nano/magic-academy.webp`
+![magic-academy](./img-nano/magic-academy.webp)
+
+### `img-nano/overworld-map.webp`
+![overworld-map](./img-nano/overworld-map.webp)
+
+### `img-nano/pirate-cove.webp`
+![pirate-cove](./img-nano/pirate-cove.webp)
+
+### `img-nano/pixel-forest.webp`
+![pixel-forest](./img-nano/pixel-forest.webp)
+
+### `img-nano/sky-island.webp`
+![sky-island](./img-nano/sky-island.webp)
+
+### `img-nano/snowy-fortress.webp`
+![snowy-fortress](./img-nano/snowy-fortress.webp)
+
+### `img-nano/spaceport-hangar.webp`
+![spaceport-hangar](./img-nano/spaceport-hangar.webp)
+
+### `img-nano/town-square.webp`
+![town-square](./img-nano/town-square.webp)
 

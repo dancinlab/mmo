@@ -4,15 +4,14 @@ Run: python3 gen-dioramas.py  (outputs img/<slug>.webp + prompts.md)"""
 import json, os, subprocess, tempfile, urllib.request, shutil, concurrent.futures
 
 KEY = subprocess.run(["secret", "get", "fal.api_key"], capture_output=True, text=True).stdout.strip()
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "img-nano")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "img-block")
 os.makedirs(OUT, exist_ok=True)
 
 TAIL = " 16:9 widescreen composition. Cohesive {pal} color grade, soft studio lighting, soft long shadows, dark premium background. No text, no price, no currency."
-SKEL = ("A polished 3D ISOMETRIC DIORAMA, a small highly-detailed game world built ENTIRELY out of tiny "
-        "NANOBLOCK-style micro building bricks (small studded interlocking plastic blocks snapped together, "
-        "miniature brick-toy model, visible stud bumps and brick seams), displayed as a buildable kit on a "
-        "glossy pedestal base: {subj}. Charming collectible brick-set look, tilt-shift miniature feel, "
-        "crisp clean studio render, every element clearly made of assembled micro bricks.")
+SKEL = ("A polished 3D ISOMETRIC DIORAMA, a small game world built out of CHUNKY 3D BLOCKS — bold simple "
+        "cube blocks (clean voxel/box shapes, smooth blocks, NO studs, NO bumps, NO assembly grooves), like a "
+        "blocky toy model, on a glossy pedestal base: {subj}. Clean minimal blocky look, tilt-shift miniature, "
+        "crisp studio render.")
 
 # (slug, subject, palette)
 SCENES = [
@@ -68,15 +67,15 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
         rows.append((slug, prompt, status))
 
 # write prompts.md
-lines = ["# Nanoblock micro-brick diorama prompts (game / MMO)\n",
-         "20 game/MMO scenes in a shared **3D isometric NANOBLOCK micro-brick** style (assembled studded mini-bricks, ",
+lines = ["# Block (voxel) diorama prompts (game / MMO)\n",
+         "20 game/MMO scenes in a shared **3D isometric chunky-BLOCK (voxel)** style (bold simple cube blocks, ",
          "tilt-shift miniature on a pedestal). Generated with `fal-ai/gpt-image-2`, 16:9.\n"]
 for slug, prompt, status in rows:
     ok = "✅" in status
     lines.append(f"\n## {slug} {'' if ok else '(FAILED)'}\n")
     if ok:
-        lines.append(f"![{slug}](./img/{slug}.webp)\n")
+        lines.append(f"![{slug}](./img-block/{slug}.webp)\n")
     lines.append(f"> {prompt}\n")
-open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "prompts-nano.md"), "w").write("\n".join(lines))
+open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "prompts-block.md"), "w").write("\n".join(lines))
 ok = sum(1 for _,_,s in rows if "✅" in s)
 print(f"=== done: {ok}/{len(rows)} ok ===", flush=True)
