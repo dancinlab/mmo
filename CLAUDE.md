@@ -12,26 +12,20 @@ No baked price/currency/text in any image.
 - `SCENES` (in the script) — 20 `(slug, subject, palette)` tuples. Edit a row → rerun to refresh one scene.
 - Image dirs: `img-block/` (block) · `img/` (pixel) · `img-nano/` (nanoblock) · `game-audio-diorama.*` (main hero).
 
-## FINAL prompt — Block (voxel) dioramas — THE WINNER ✅
-Mixed, non-uniform block scale (big structural blocks + many small detail blocks),
-main-hero level of density. This is the current `SKEL` in `gen-dioramas.py`.
+## Prompts live in `prompts.json` — the SSOT (versioned, NOT prose here)
+The block SKEL/TAIL are versioned in [`prompts.json`](./prompts.json): `{ active, tail, versions{v1..vN} }`.
+`gen-dioramas.py` loads the `active` version (override per run with `MMO_VER=v3`). To tune the look,
+add a new `vN` and flip `active` — do NOT paste prompt text into this file or hardcode it in the script.
 
-**SKEL** (`{subj}` = per-scene subject):
-```
-A richly-detailed 3D ISOMETRIC DIORAMA, a game world built out of smooth 3D BLOCKS of MIXED, NON-UNIFORM sizes — big chunky blocks for the large masses (walls, terrain, roofs) combined with many small blocks for fine detail (windows, props, characters, foliage, trim), all clean smooth cube/box shapes with NO studs and NO bumps, sitting on a glossy pedestal base: {subj}. Dense, intricate blocky build with lots of little blocks adding texture and depth, varied block scale, tilt-shift miniature feel, premium crisp studio render, main-hero level of detail.
-```
+Version history — newest first (see each version's `label` / `note` / `status` in the JSON):
+- **v4** + finely-subdivided characters — `active` (many tiny blocks, no big cubic Minecraft heads).
+- **v3** + open-air outdoor + cinematic lighting (warm key, glowing lanterns, rim light).
+- **v2** mixed non-uniform blocks — `ok` (big masses + small detail = main-hero density).
+- **v1** chunky uniform blocks — `rejected` (too big, monotone, toy-ish).
+- (nanoblock micro-bricks were also tried → rejected: too small, literal studs/grooves.)
 
-**TAIL** (`{pal}` = per-scene palette, e.g. "emerald and teal"):
-```
- 16:9 widescreen composition. Cohesive {pal} color grade, soft studio lighting, soft long shadows, dark premium background. No text, no price, no currency.
-```
-
-### Why this version (iteration history → lessons)
-- **chunky uniform blocks** → too big, monotone, toy-ish (rejected).
-- **nanoblock micro-bricks** → too small, literal studs + assembly grooves (rejected).
-- **mixed non-uniform blocks** → big masses + small detail blocks = the main-hero richness. ✅
-- Core lesson: it's a plain **block design** (no studs/grooves); richness comes from **varied block sizes**,
-  not from micro-detail. Keep "NO studs, NO bumps" + "mixed, non-uniform sizes" in the prompt.
+Core lesson: it's a plain **block design** (no studs/grooves); richness comes from **varied block sizes**,
+finely-subdivided characters, outdoor framing and dramatic lighting — not from micro-detail.
 
 ## Other style prompts (kept for reference)
 - **Pixel-art** (`prompts.md`) — isometric low-poly + retro pixel-art dioramas.

@@ -15,7 +15,7 @@ The original EdgeGigs game-audio thumbnail. Prompt + seed: [`game-audio-diorama.
 
 # 🧊 Block (voxel) dioramas (20)
 
-Game/MMO scenes built out of **smooth 3D blocks of mixed, non-uniform sizes** (big blocks for masses + many small blocks for detail, no studs, no grooves),
+Game/MMO scenes built out of **smooth 3D blocks of mixed, non-uniform sizes** (big blocks for masses + many small blocks for detail, finely-subdivided characters, open-air outdoor scenes with cinematic lighting, no studs/grooves),
 isometric tilt-shift miniature on a glossy pedestal, palette-varied.
 Prompts: [`prompts-block.md`](./prompts-block.md) · generator: [`gen-dioramas.py`](./gen-dioramas.py).
 

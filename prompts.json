@@ -1,0 +1,30 @@
+{
+  "active": "v4",
+  "tail": " 16:9 widescreen composition. Cohesive {pal} color grade, soft studio lighting, soft long shadows, dark premium background. No text, no price, no currency.",
+  "versions": {
+    "v4": {
+      "label": "+ finely-subdivided characters (no Minecraft heads)",
+      "status": "active",
+      "note": "characters built from many tiny blocks, rounded detailed proportions, avoid oversized square cubic heads",
+      "skel": "A richly-detailed 3D ISOMETRIC DIORAMA, an OPEN-AIR OUTDOOR game world built out of smooth 3D BLOCKS of MIXED, NON-UNIFORM sizes — big chunky blocks for the large masses (walls, terrain, roofs) combined with many small blocks for fine detail (windows, props, foliage, trim). Characters and creatures are finely subdivided into MANY TINY BLOCKS with rounded, detailed, well-proportioned shapes — NOT big cubic Minecraft-style heads, avoid oversized square blocky heads, keep small smooth high-resolution multi-block figures. All clean smooth cube/box shapes with NO studs and NO bumps, sitting on a glossy pedestal base: {subj}. Expansive outdoor scene with open sky and depth, dense intricate blocky build with lots of little blocks adding texture, varied block scale, dramatic CINEMATIC LIGHTING — warm golden-hour key light, glowing lanterns and light sources casting soft pools of light, bright rim light and gentle bloom, atmospheric god-rays, tilt-shift miniature feel, premium crisp studio render, main-hero level of detail."
+    },
+    "v3": {
+      "label": "+ open-air outdoor + cinematic lighting",
+      "status": "trial",
+      "note": "expansive outdoor scene, warm golden-hour key + glowing lanterns + rim light",
+      "skel": "A richly-detailed 3D ISOMETRIC DIORAMA, an OPEN-AIR OUTDOOR game world built out of smooth 3D BLOCKS of MIXED, NON-UNIFORM sizes — big chunky blocks for the large masses (walls, terrain, roofs) combined with many small blocks for fine detail (windows, props, characters, foliage, trim), all clean smooth cube/box shapes with NO studs and NO bumps, sitting on a glossy pedestal base: {subj}. Expansive outdoor scene with open sky and depth, dense intricate blocky build with lots of little blocks adding texture, varied block scale, dramatic CINEMATIC LIGHTING — warm golden-hour key light, glowing lanterns and light sources casting soft pools of light, bright rim light and gentle bloom, atmospheric god-rays, tilt-shift miniature feel, premium crisp studio render, main-hero level of detail."
+    },
+    "v2": {
+      "label": "mixed non-uniform blocks",
+      "status": "ok",
+      "note": "big masses + many small detail blocks → main-hero density",
+      "skel": "A richly-detailed 3D ISOMETRIC DIORAMA, a game world built out of smooth 3D BLOCKS of MIXED, NON-UNIFORM sizes — big chunky blocks for the large masses (walls, terrain, roofs) combined with many small blocks for fine detail (windows, props, characters, foliage, trim), all clean smooth cube/box shapes with NO studs and NO bumps, sitting on a glossy pedestal base: {subj}. Dense, intricate blocky build with lots of little blocks adding texture and depth, varied block scale, tilt-shift miniature feel, premium crisp studio render, main-hero level of detail."
+    },
+    "v1": {
+      "label": "chunky uniform blocks",
+      "status": "rejected",
+      "note": "blocks all one big size — too big, monotone, toy-ish",
+      "skel": "A polished 3D ISOMETRIC DIORAMA, a small game world built out of CHUNKY 3D BLOCKS — bold simple cube blocks (clean voxel/box shapes, smooth blocks, NO studs, NO bumps, NO assembly grooves), like a blocky toy model, on a glossy pedestal base: {subj}. Clean minimal blocky look, tilt-shift miniature, crisp studio render."
+    }
+  }
+}

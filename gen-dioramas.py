@@ -7,13 +7,13 @@ KEY = subprocess.run(["secret", "get", "fal.api_key"], capture_output=True, text
 OUT = os.environ.get("MMO_OUT") or os.path.join(os.path.dirname(os.path.abspath(__file__)), "img-block")
 os.makedirs(OUT, exist_ok=True)
 
-TAIL = " 16:9 widescreen composition. Cohesive {pal} color grade, soft studio lighting, soft long shadows, dark premium background. No text, no price, no currency."
-SKEL = ("A richly-detailed 3D ISOMETRIC DIORAMA, a game world built out of smooth 3D BLOCKS of MIXED, "
-        "NON-UNIFORM sizes — big chunky blocks for the large masses (walls, terrain, roofs) combined with "
-        "many small blocks for fine detail (windows, props, characters, foliage, trim), all clean smooth "
-        "cube/box shapes with NO studs and NO bumps, sitting on a glossy pedestal base: {subj}. Dense, "
-        "intricate blocky build with lots of little blocks adding texture and depth, varied block scale, "
-        "tilt-shift miniature feel, premium crisp studio render, main-hero level of detail.")
+# Prompt SKEL/TAIL live in prompts.json (versioned v1..vN). Pick a version with MMO_VER, else the "active" one.
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "prompts.json"), encoding="utf-8") as f:
+    PROMPTS = json.load(f)
+VER = os.environ.get("MMO_VER") or PROMPTS["active"]
+TAIL = PROMPTS["tail"]
+SKEL = PROMPTS["versions"][VER]["skel"]
+print(f"prompt version: {VER} — {PROMPTS['versions'][VER]['label']}", flush=True)
 
 # (slug, subject, palette)
 SCENES = [
