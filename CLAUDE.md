@@ -6,10 +6,13 @@ No baked price/currency/text in any image.
 
 ## Key files
 - `gen-dioramas.py` — batch generator. Builds `SKEL.format(subj=...) + TAIL.format(pal=...)`,
-  6-way ThreadPool, writes images to `OUT` and a prompt log. Env knobs:
+  6-way ThreadPool, one auto-retry per scene, writes images to `OUT` and appends a run log to
+  `state/gen-log.jsonl` (ts · version · out dir · slug · status). Env knobs:
   - `MMO_OUT=<dir>` — override output dir (default `img-block/`). Use for preview batches.
   - `MMO_N=<int>` — only generate the first N scenes (preview / partial regen).
-- `SCENES` (in the script) — 20 `(slug, subject, palette)` tuples. Edit a row → rerun to refresh one scene.
+  - `MMO_ONLY=<slug,slug,...>` — only generate the named scenes (partial regen).
+  - Subset runs (`MMO_N`/`MMO_ONLY`) do NOT rewrite `prompts-block.md` (would clobber other scenes).
+- `scenes.json` — the `(slug, subject, palette)` rows (32 scenes). Edit a row → rerun to refresh one scene.
 - Image dirs: `img-block/` (block) · `img/` (pixel) · `img-nano/` (nanoblock) · `game-audio-diorama.*` (main hero).
 
 ## Prompts live in `prompts.json` — the SSOT (versioned, NOT prose here)
