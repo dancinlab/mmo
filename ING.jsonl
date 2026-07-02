@@ -5,3 +5,4 @@
 {"kind":"work","id":"5","ts":"2026-07-02T09:48:16.740Z","text":"발산 백로그: 파이프라인 잔여 — README 갤러리 자동 재생성, perceptual-hash 중복감지, 해시 증분 스킵, 비용 대시보드, 프롬프트 diff 뷰어"}
 {"kind":"work","id":"6","ts":"2026-07-02T09:57:22.058Z","text":"에셋화 파이프라인 구현 — masters/ raw PNG 보관(다음 런부터), derive.py 표면 파생(card/hero/icon/og), crops.json 오버라이드, meta.json 사이드카, QA 게이트 8항목 (설계: state/fable-assets-strategy.md)"}
 {"kind":"work","id":"7","ts":"2026-07-02T09:57:23.756Z","text":"에셋 선결 수리 — world-tree-village 여백 재생성(상단 절단), 9:16 portrait 재생성 라인(MMO_SIZE + v4-portrait), 마스터 px 실측(sips)"}
+{"kind":"work","id":"8","ts":"2026-07-02T10:00:18.180Z","text":"3D 게임에셋 구현 컨설트(fable) 진행 중 — v4 블록 룩의 3D화: 저작 파이프라인·킷 분해·엔진/포맷 스펙·라이팅 매칭·수직 슬라이스 (착륙 시 state/ 박제)"}
