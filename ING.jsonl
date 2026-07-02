@@ -3,3 +3,4 @@
 {"kind":"work","id":"3","ts":"2026-07-02T09:48:13.331Z","text":"발산 백로그: 프로덕트 규격 파생 — 1:1 아이콘, 9:16 세로, 스팀 캡슐 세트, OG 카드, 시즌 오버레이"}
 {"kind":"work","id":"4","ts":"2026-07-02T09:48:15.018Z","text":"발산 백로그: 대안 스타일 패밀리 — 종이접기/클레이/펠트/캔디/틴토이/스테인드글라스 (소재 치환 공식)"}
 {"kind":"work","id":"5","ts":"2026-07-02T09:48:16.740Z","text":"발산 백로그: 파이프라인 잔여 — README 갤러리 자동 재생성, perceptual-hash 중복감지, 해시 증분 스킵, 비용 대시보드, 프롬프트 diff 뷰어"}
+{"kind":"work","id":"6","ts":"2026-07-02T09:57:22.058Z","text":"에셋화 파이프라인 구현 — masters/ raw PNG 보관(다음 런부터), derive.py 표면 파생(card/hero/icon/og), crops.json 오버라이드, meta.json 사이드카, QA 게이트 8항목 (설계: state/fable-assets-strategy.md)"}
