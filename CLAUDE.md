@@ -30,6 +30,24 @@ Version history — newest first (see each version's `label` / `note` / `status`
 Core lesson: it's a plain **block design** (no studs/grooves); richness comes from **varied block sizes**,
 finely-subdivided characters, outdoor framing and dramatic lighting — not from micro-detail.
 
+## 3D asset program — plan SSOT is `state/fable-impl-plan.md`
+The 2D block-diorama look is being turned into real 3D game assets. Execution-ready plan
+(all values final, no re-deciding): [`state/fable-impl-plan.md`](./state/fable-impl-plan.md) ·
+strategy rationale: [`state/fable-3d-assets.md`](./state/fable-3d-assets.md).
+
+- Core mechanism: author in uniform voxels (MagicaVoxel) → `vox2blocks` greedy box decomposition
+  (merge cap 8) → chamfered-box GLB. This converter IS the look — AI image-to-3D is blockout
+  reference only, never final geometry.
+- Milestones: M0 tooling (vox2blocks · palette_gen · layout schema · grid bible) → M1 pet-ranch
+  vertical slice (kit ~22 assets, three.js viewer, Blender bake, lighting A/B gate) →
+  M2–M5 biome scale-out (31 scenes) → M6 marketplace render pipe. ~144 person-days, $0 software.
+- Tech spec: GLB only, vertex colors (no PBR maps), 3 materials (matte block / emissive /
+  glossy pedestal), scene ≤ 500k tri, rigid per-block skinning at 12fps steps.
+- Quantitative gates: gltf-validator 0 errors · A/B look-match hue-histogram corr ≥ 0.6 +
+  rubric ≥ 4/5 · per-class tri budgets. Human-required steps: voxel authoring, shape judgement,
+  visual look sign-off — everything else headless.
+- Next action lives on the ING board (start = M0 step 1, environment setup).
+
 ## Other style prompts (kept for reference)
 - **Pixel-art** (`prompts.md`) — isometric low-poly + retro pixel-art dioramas.
 - **Nanoblock** (`prompts-nano.md`) — micro-brick studded look (kept, moved to README bottom).
